@@ -1,17 +1,12 @@
 object mensajeria {
-	var mensajero
+	var mensajero=#{}
 	method contratar(alguien) {
 		mensajero=alguien
 		}
 	method mensajeros(){
 		return mensajero
 	}
-	method pesoTotal(){
-		return mensajero.peso()
-	}
-	method llamada(){
-		return mensajero.puedoLlamar()
-	}
+	
 }
 object bicicleta {
 
@@ -27,7 +22,13 @@ object camion {
 }
 
 object roberto{
-	var peso
+	var peso=0
+	
+	
+	method pesoRoberto(valor) {
+		peso=peso+valor
+	}
+	
 	method tieneAcoplado(numero){
 		if(numero==0){
 			peso=bicicleta.peso()
@@ -37,6 +38,8 @@ object roberto{
 			}
 		
 	}
+	
+	
 	method peso(){
 		return peso
 	}

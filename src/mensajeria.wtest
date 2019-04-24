@@ -15,5 +15,9 @@ test "Si neo es empleado, Hay un mensajero que puede enviar el paquete" {
 
 test"Que roberto (90kg) puede llevar un paquete que está pago en un camión que tiene un acoplado"{
 	mensajeria.contratar(roberto)
-	
+	roberto.pesoRoberto(90)
+	paquete.estaPago(true)
+	paquete.destino(puenteDeBrooklyn)
+	roberto.tieneAcoplado(1)
+	assert.that(puenteDeBrooklyn.dejarPasar(roberto))
 }

@@ -1,13 +1,13 @@
 import mensajeros.*
 object puenteDeBrooklyn{
 	
-	method dejarPasar(){
-		return mensajeria.pesoTotal()<=1000}
+	method dejarPasar(mensajero){
+		return mensajero.pesoTotal()<=1000}
 }
 
 object laMatrix{
 
-	method dejarPasar(){
-		return mensajeria.llamada()
+	method dejarPasar(mensajero){
+		return mensajero.llamada()
 	}	
 }
